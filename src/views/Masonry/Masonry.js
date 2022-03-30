@@ -97,8 +97,8 @@ const Masonry = () => {
       </Typography>
       <Box mt={5}>
         <Grid container justify="center" spacing={3}>
+      <div className='mid-center'>
           <Grid item xs={12} md={2} lg={2} className={classes.gridItem}>
-            
               <div className='cemetry-small-3' >
                 <Typography style={{ textAlign: 'center' }}>Next Epoch</Typography>
                 <ProgressCountdown base={moment().toDate()} hideBar={true} deadline={to} description="Next Epoch" />
@@ -140,6 +140,7 @@ const Masonry = () => {
               </div>
            
           </Grid>
+          </div>
         </Grid>
 
         {/* <Grid container justify="center">

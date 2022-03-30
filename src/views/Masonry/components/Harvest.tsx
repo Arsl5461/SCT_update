@@ -33,7 +33,7 @@ const Harvest: React.FC = () => {
 
   return (
     <Box>
-      <div className="cemetry_cards-1">
+      <div className="cemetry_cards-1 mar-right">
         <div>
           <StyledCardContentInner>
               <div className="cemetry_images">

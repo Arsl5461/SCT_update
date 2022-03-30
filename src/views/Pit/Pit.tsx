@@ -93,6 +93,7 @@ const Pit: React.FC = () => {
           <div className="cemetry-small">
           
               <div className="cemetry-small-4">
+              
                   <div className="heading-cemetry">Last Epach TWAP Price</div>
                   <div className="value">TOMB=0.9874FTM</div>
                   </div>
@@ -101,6 +102,7 @@ const Pit: React.FC = () => {
                   <div className="value">TBOND = 0.98FTM</div>
                   </div>
                   </div>
+                
                   <div className="cemetry_cards">
               <div className="cemetry_cards-1">
                   <div className="cemetry_images">

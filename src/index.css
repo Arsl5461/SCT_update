@@ -942,6 +942,37 @@ font-size: 15px;
 .center{
   text-align: center;
 }
+.mid-center{
+  display:flex;
+  justify-content: space-between;
+}
+@media (max-width:540px){
+  .mid-center{
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+height:100vh
+}
+.cemetry_cards-1{
+margin-left: 4rem;
+margin-top: 3rem;
+}
+.card1{
+  margin-top: 2rem;
+}
+.heading{
+  margin-left: 7rem;
+}
+.heading2{
+  margin-left: 7rem;
+}
+.tvl_amount{
+  margin-left: 5rem;
+}
+.mar-right{
+  margin-right: 3rem;
+}
+}
 
 
  
