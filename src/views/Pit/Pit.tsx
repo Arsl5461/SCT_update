@@ -87,7 +87,7 @@ const Pit: React.FC = () => {
           <>
         
           <div className='cemetry_title'>
-               <div className="heading wheat">PIT</div>
+               <div className="heading wheat mar-right pit-center ">PIT</div>
           <div className='bio wheat'>Buy and Redeem Bonds to Earn Premuims</div>
           </div>
           <div className="cemetry-small">
@@ -137,7 +137,11 @@ const Pit: React.FC = () => {
               </div>
           <div className='cemetry_heading'>Redeem TOMB</div>
           <div className="deposit">TBOND to TBOND</div>
-          <div className="deposit">0.0000 TBOND Available in wallet</div>
+          <div className="deposit card11">0.0000 TBOND Available in wallet</div>
+          <div className="deposit card11 hidden">0.0000 TBOND Available in wallet</div>
+          <div className="deposit card11 hidden">0.0000 TBOND Available in wallet</div>
+
+          
           <StyledCardWrapper>
                 <ExchangeCard
                   action="Redeem"

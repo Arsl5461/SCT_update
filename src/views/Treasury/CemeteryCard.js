@@ -10,7 +10,7 @@ const CemeteryCard = ({ bank }) => {
 
   return (
     <Grid item xs={12} md={4} lg={4}>
-      <Card variant="outlined">
+      <div className="cemetry_cards-1">
         <CardContent>
           <Box style={{ position: 'relative' }}>
             <Box
@@ -30,7 +30,7 @@ const CemeteryCard = ({ bank }) => {
             </Box>
           </Box>
         </CardContent>
-      </Card>
+      </div>
     </Grid>
   );
 };

@@ -78,7 +78,7 @@ const Stake: React.FC = () => {
 
   return (
     <Box>
-      <div className="cemetry_cards-1">
+      <div className="cemetry_cards-1" style={{ marginRight: '10rem' }}>
         <div>
           <StyledCardContentInner>
             <StyledCardHeader>
@@ -87,7 +87,7 @@ const Stake: React.FC = () => {
               </CardIcon> */}
                                 <div className="cemetry_images">
      <div className="rounded icons-harvest"><img src={Crypto11} width="50" height="50"/></div>
-     <div className="rounded icons-harvest"><img src={Fantom} width="50" height="50"/></div> 
+     {/* <div className="rounded icons-harvest"><img src={Fantom} width="50" height="50"/></div>  */}
    </div>
    <div className="wheat2">
               <Value value={getDisplayBalance(stakedBalance)} />
@@ -106,6 +106,7 @@ const Stake: React.FC = () => {
                   color="primary"
                   style={{ marginTop: '20px' }}
                   onClick={approve}
+                  className="btn"
                 >
                   Approve PSHARES
                 </Button>

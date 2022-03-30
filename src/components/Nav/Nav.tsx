@@ -120,25 +120,28 @@ const Nav = () => {
               Tomb Finance
               </Link>
             </Typography>
-            <Box mr={20}>
-              <NavLink  style={{fontSize:"14px"}} color="color" to="/" className={classes.link}>
+            <Box mr={13}>
+              <NavLink  style={{fontSize:"18px"}} color="color" to="/" className={classes.link}>
                 Home
               </NavLink>
-              <NavLink style={{fontSize:"14px"}} color="textPrimary" to="/cemetry" className={classes.link} activeClassName="active">
+              <NavLink style={{fontSize:"18px"}} color="textPrimary" to="/cemetry" className={classes.link} activeClassName="active">
                 Cemetery
               </NavLink>
-              <NavLink style={{fontSize:"14px"}} color="textPrimary" to="/masonry" className={classes.link} activeClassName="active">
+              <NavLink style={{fontSize:"18px"}} color="textPrimary" to="/masonry" className={classes.link} activeClassName="active">
                 Mosonry
               </NavLink>
-              <NavLink style={{fontSize:"14px"}} color="textPrimary" to="/pit" className={classes.link} activeClassName="active">
+              <NavLink style={{fontSize:"18px"}} color="textPrimary" to="/pit" className={classes.link} activeClassName="active">
                 Pit
               </NavLink>
-              <NavLink style={{fontSize:"15px"}} color="textPrimary" to="/rebates" className={classes.link} activeClassName="active">
+              <NavLink style={{fontSize:"18px"}} color="textPrimary" to="/rebates" className={classes.link} activeClassName="active">
                 Rebates
               </NavLink>
-              <Link style={{fontSize:"15px"}} color="textPrimary" to="/treasury" className={classes.link}>
+              <NavLink style={{fontSize:"18px"}} color="textPrimary" to="/treasury" className={classes.link} activeClassName="active" >
                 Treasury
-              </Link>
+              </NavLink>
+              <NavLink style={{fontSize:"18px"}} color="textPrimary" to="/treasury" className={classes.link} activeClassName="active" >
+                Docs
+              </NavLink>
 
               {/* <Link style={{fontSize:"15px"}} color="textPrimary" to="/treasury" className={classes.link}>
                 Docs
@@ -164,9 +167,9 @@ const Nav = () => {
               {/* <a href="https://snapshot.org/#/forgiving.forg.eth" target="_blank" className={classes.link}>
                 Governance
               </a> */}
-              <a href="https://docs.sct.finance" target="_blank" className={classes.link}>
+              {/* <a href="https://docs.sct.finance" target="_blank" className={classes.link} >
                 Docs
-              </a>
+              </a> */}
             </Box>
               <FormControl fullWidth className={classes.form}>
   <InputLabel id="demo-simple-select-label">B_subdomain</InputLabel>
@@ -182,7 +185,8 @@ const Nav = () => {
     <MenuItem value={30}>to C_subdomain</MenuItem>
   </Select>
 </FormControl>
-            <AccountButton text="My Wallet" />
+<i className="icon"></i>
+            <AccountButton text="Connect Wallet" />
           </>
         ) : (
           <>
@@ -218,9 +222,9 @@ const Nav = () => {
               <Divider />
               <List>
                 <ListItemLink primary="Home" to="/" />
-                <ListItemLink primary="Cemetry" to="/farms" />
-                <ListItemLink primary="Mosonory" to="/boardroom" />
-                <ListItemLink primary="Pit" to="/bonds" />
+                <ListItemLink primary="Cemetry" to="/cemetry" />
+                <ListItemLink primary="Mosonory" to="/masonry" />
+                <ListItemLink primary="Pit" to="/pit" />
                 <ListItemLink primary="Rebates" to="/rebates" />
                 <ListItemLink primary="Treasury" to="/treasury" />
                 {/* <ListItemLink primary="Masonry" to="/masonry" />

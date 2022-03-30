@@ -181,22 +181,23 @@ The algorithmic token pegged to FTM</div>
 {/* <div className='bg2bg'> */}
 <div className='cards'>
 {/* Card1 */}
-<div className='card1'>
+{/* <div className='card1'>
   <div className='cards_heading'>
     <img src={Crypto1}></img>
     <p className="title_card">$TOMB</p>
    
-    <Button
+     <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('SCT');
                 }}
-                color="secondary"
-                variant="outlined"
-                style={{borderColor: "var(--accent-light)" }}
+                // color="secondary"
+                //  variant="outlinedPrimary"
+                // style={{borderColor: "var(--accent-light)", padding:'2px' }}
               >
                 +&nbsp;
                 <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
               </Button>
+              
     
   </div>
     <h1 className='white center font12'>Current Price</h1>
@@ -209,25 +210,48 @@ The algorithmic token pegged to FTM</div>
     <p className='purple center font12'>Total Supply:</p>
     <h1 className='white center font12' >${tombTotalSupply}</h1>
 <button className='buy_tomb center btn font12'><a className='tomb' href="https://spookyswap.finance/swap?outputCurrency=0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37">Buy Tomb</a></button>
+  </div> */}
+<div className='card1'>
+  <div className='cards_heading'>
+    <img src={Crypto1}></img>
+    <h3 className="title_card">$TOMB</h3>
+   
+    {/* <button
+    
+                // onClick={() => {
+                //   tombFinance.watchAssetInMetamask('PSHARES');
+                // }}
+                // color="secondary"
+                // variant="iconSizeSmall"
+                style={{borderColor: "var(--accent-light)" }}
+              > */}
+                
+                <img  alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} className="mask"onClick={() => {
+                  tombFinance.watchAssetInMetamask('PSHARES');
+                }} />
+              {/* </button> */}
+    
   </div>
-  
+    <h1 className='white center font12'>Current Price</h1>
+    <p className='purple center font12'>FTM <span className='white font font12'>{tombPriceInFTM ? tombPriceInFTM : '-.----'}</span></p>
+    <p className='purple center font12'>USD <span className='white font12'>{tombPriceInDollars ? tombPriceInDollars : '-.--'}</span></p>
+    <p className='purple center font12'>Market Gap:</p>
+    <h1 className='white center font12'>${(tombCirculatingSupply * tombPriceInDollars).toFixed(2)}</h1>
+    <p className='purple center font12'>Circulating Supply:</p>
+    <h1 className='white center font12'>{tombCirculatingSupply}</h1>
+    <p className='purple center font12'>Total Supply:</p>
+    <h1 className='white center font12'>${tombTotalSupply}</h1>
+<button className='buy_tomb center btn font12'><a className='tomb' href="https://spookyswap.finance/swap?outputCurrency=0x4cBF6B67744c2416047CdD0bA4061f97111a24ec">Buy TOMB</a></button>
+  </div>  
   {/* Card2 */}
   <div className='card1'>
   <div className='cards_heading'>
     <img src={Crypto1}></img>
     <h3 className="title_card">$TSHARE</h3>
    
-    <Button
-                onClick={() => {
+    <img  alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} className="mask"onClick={() => {
                   tombFinance.watchAssetInMetamask('PSHARES');
-                }}
-                color="secondary"
-                variant="outlined"
-                style={{borderColor: "var(--accent-light)" }}
-              >
-                +&nbsp;
-                <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
-              </Button>
+                }} />
     
   </div>
     <h1 className='white center font12'>Current Price</h1>
@@ -248,17 +272,9 @@ The algorithmic token pegged to FTM</div>
     <img src={Crypto1}></img>
     <h3 className="title_card">$TBOND</h3>
   
-    <Button
-                onClick={() => {
-                  tombFinance.watchAssetInMetamask('PBOND');
-                }}
-                color="secondary"
-                variant="outlined"
-                style={{ borderColor: "var(--accent-light)" }}
-              >
-                +&nbsp;
-                <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
-              </Button>
+    <img  alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} className="mask"onClick={() => {
+                  tombFinance.watchAssetInMetamask('PSHARES');
+                }} />
     
   </div>
     <h1 className='white center font12'>Current Price</h1>

@@ -32,13 +32,13 @@ const Harvest: React.FC = () => {
   const { from, to } = useClaimRewardTimerMasonry();
 
   return (
-    <Box>
-      <div className="cemetry_cards-1 mar-right">
+    <>
+      <div className="cemetry_cards-1">
         <div>
           <StyledCardContentInner>
               <div className="cemetry_images">
 <div className="rounded icons-harvest"><img src={Crypto11} width="50" height="50"/></div>
-<div className="rounded icons-harvest"><img src={Fantom} width="50" height="50"/></div> 
+{/* <div className="rounded icons-harvest"><img src={Fantom} width="50" height="50"/></div>  */}
 </div>
             <StyledCardHeader>
               {/* <CardIcon>
@@ -79,7 +79,7 @@ const Harvest: React.FC = () => {
           </Card>
         )}
       </Box>
-    </Box>
+    </>
   );
 };
 

@@ -28,6 +28,7 @@ html,
 body {
   overflow-y: auto;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .makeStyles-paper-11,
@@ -847,6 +848,9 @@ color: #000;
   font-size: 50px;
   font-family: 'Amarante', cursive;
 }
+.btn-margin{
+  margin-right: 1rem!important;
+}
 .heading2{
 margin-left: 20px;
 }
@@ -856,13 +860,23 @@ margin-left: 20px;
 }
 .tvl_amount{
   margin-left: 30px;
-  margin-top: 30px;
+  margin-top: 10px;
   border:1px solid white;
   padding-left:7rem;
   padding-right: 7rem;
   padding-top: 1rem;
-  border-radius:15px
+  border-radius:15px;
+  color: wheat !important;
+  font-size: 2rem;
 }
+.btn-wallet{
+  background-color: transparent!important;
+  color:wheat!important;
+  background-image: url("./assets/img/wallet.svg") !important;
+  height: 52px;
+  width: 100%;
+}
+
 .wheat{
   color:wheat;
 }
@@ -946,7 +960,7 @@ font-size: 15px;
   display:flex;
   justify-content: space-between;
 }
-@media (max-width:540px){
+/* @media (max-width:540px){
   .mid-center{
 flex-direction: column;
 align-items: center;
@@ -954,17 +968,25 @@ justify-content: space-between;
 height:100vh
 }
 .cemetry_cards-1{
-margin-left: 4rem;
-margin-top: 3rem;
+flex-direction: column;
+align-items: center;
 }
 .card1{
   margin-top: 2rem;
 }
-.heading{
-  margin-left: 7rem;
+.card11{
+  margin-top: 3rem!important;
 }
+.heading{
+  margin-left: 7rem!important;
+}
+
 .heading2{
   margin-left: 7rem;
+}
+.heading3{
+  margin-left: 10rem;
+  margin-top: 1rem;
 }
 .tvl_amount{
   margin-left: 5rem;
@@ -972,7 +994,77 @@ margin-top: 3rem;
 .mar-right{
   margin-right: 3rem;
 }
+.cemetry-small{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+ 
+  
 }
+
+.cemetry-small-4{
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.ma{
+  margin-top: 1rem;
+}
+.cemetry_cards{
+  margin-top: 1rem;
+}
+} */
+/* @media(max-width:600px){
+  .ma{
+    margin-top: 1rem;
+  } */
+/* }
+@media (max-width:480px){
+  .mid-center{
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+height:100vh
+} */
+/* .cemetry_cards-1{
+margin-left: 2rem;
+margin-top: 1.5rem;
+} */
+.card1{
+  margin-top: 2rem;
+}
+.heading{
+  margin-left: 5rem;
+}
+.heading2{
+  margin-left: 5rem;
+}
+.heading3{
+  /* margin-left: 7rem; */
+  margin-top: 1rem;
+}
+.tvl_amount{
+  margin-left: 3rem;
+}
+.mar-right{
+  margin-right: 1.5rem;
+}
+.cemetry-small{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+ 
+  
+}
+
+.cemetry-small-4{
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+/* } */
 
 
  
@@ -1020,8 +1112,8 @@ margin-top: 3rem;
   /* color:white */
 }
 .cemetry_cards-1{
-  height:300px;
-  width: 300px;
+  height:250px;
+  width: 400px;
   border:1px solid black;
   border-radius: 25px;
 }
@@ -1087,15 +1179,19 @@ margin-top: 3rem;
 }
 .cemetry-small-1{
   margin-right:2rem;
-  height:50px;
-  width: 140px;
+  height:100px;
+  width: 120px;
+  /* padding-top: 5rem; */
   border:1px solid black;
-  border-radius: 25px;
+  border-radius: 30px;
   background-image: linear-gradient(1turn,rgba(30,0,56,.8),#16002c);
   color:wheat;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.pad{
+  padding-top: 1.5rem!important;
 }
 .heading-cemetry{
   font-size: 20px;
@@ -1107,7 +1203,7 @@ margin-top: 3rem;
 }
 .cemetry-small-3{
   margin-right:2rem;
-  height:50px;
+  height:80px;
   width: 200px;
   border:1px solid black;
   border-radius: 25px;
@@ -1116,7 +1212,86 @@ margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+ font-size: 20px;
+ font-weight: bold; 
+}
+.margintop{
+ margin-top: 20px!important; 
+}
+.wrapper{
+display:flex;
+justify-content: space-around;
+width: 100%;
+margin-left: 5rem;
+}
+.pad2{
+  padding-left: 8rem;
+  padding-right:8rem;
+  width: 50%;
+  border-radius: 25px;
+}
+.butt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  height: 20vh;
+  margin-top: 2rem;
+}
+.wrapper2{
+  display:flex;
+justify-content: space-evenly;
+margin-left: 8rem; 
+margin-right: 6rem;
+}
+.hidden{
+  opacity:0;
+}
+@media(max-width:425px){
+  .cemetry_cards-1{
+    margin-top: 3rem;
+    margin-left: 2rem;
+  }
+  .wrapper{
+    flex-direction: column;
+    margin-left: -2.5rem;
+   
+  }
+  .mid-center{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    margin-left: 2rem;
+
+  }
+  .pit-center{
+    margin-right: 6rem;
+  }
+}
+.bank{
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  margin-left: 25rem;
+}
+.mask{
+  cursor: pointer;
+  padding:0rem 1rem;
+  border: 1px solid #8570f5;
+  border-radius: 10px;
+}
+.cemetry-small-4{
+  margin-right:2rem;
+  height:auto;
+  width: 300px;
+  border:1px solid black;
+  border-radius: 25px;
+  background-image: linear-gradient(1turn,rgba(30,0,56,.8),#16002c);
+  color:wheat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .tomb{
   color:white;

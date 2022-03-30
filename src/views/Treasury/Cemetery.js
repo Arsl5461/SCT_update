@@ -9,12 +9,16 @@ import BackImage from '../../assets/img/background.png';
 import { Box, Card, CardContent, Typography, Grid, Container } from '@material-ui/core';
 
 import { Alert } from '@material-ui/lab';
+import Waves from "../../assets/img/sky.352b80b2.svg"
+import Stats from "../../views/Home/Stats"
+
+
 
 import UnlockWallet from '../../components/UnlockWallet';
 import Page from '../../components/Page';
 import CemeteryCard from './CemeteryCard';
 import { createGlobalStyle } from 'styled-components';
-
+import Cemetryy from "../../assets/img/cemetry.png"
 import useBanks from '../../hooks/useBanks';
 
 const assetList = [
@@ -37,7 +41,8 @@ const assetList = [
 
 const BackgroundImage = createGlobalStyle`
   body {
-    background: url(${BackImage}) no-repeat !important;
+    background: url(${Waves}) no-repeat top, url(${Cemetryy}) no-repeat bottom;
+
     background-size: cover !important;
   }
 `;
@@ -63,10 +68,11 @@ const Cemetery = () => {
       <Page>
         <Route exact path={path}>
           <BackgroundImage />
+          <Stats/>
           {!!account ? (
             <Container maxWidth="lg">
-              <Typography color="textPrimary" align="center" variant="h3" gutterBottom style={{ marginBottom: '50px' }}>
-              <strong style={{color:"#ff4c39"}}>Treasury</strong>
+              <Typography color="textPrimary" variant="h4" gutterBottom style={{ marginTop: '35px', marginBottom: '30px',textAlign:'center', }}>
+                Treasury
               </Typography>
 
               {/* <Box mt={5}>
@@ -89,14 +95,14 @@ const Cemetery = () => {
               <Box mt={2}>
                 <Grid container justify="center" spacing={3}>
                   <Grid item xs={12} md={4} lg={4} className={classes.gridItem}>
-                    <Card style={{ height: "auto" }}>
+                    <div className='cemetry-small-4'>
                       <CardContent align="center">
                         <Typography variant="h5">
                           Total Treasury Balance:
                         </Typography>
                         <CountUp style={{ fontSize: '25px' }} end={balance} separator="," prefix="$" />
                       </CardContent>
-                    </Card>
+                    </div>
                   </Grid>
                 </Grid>
               </Box>
@@ -107,24 +113,24 @@ const Cemetery = () => {
               </Typography>
                 <Grid container justify="center" spacing={3}>
                   <Grid item xs={12} md={4} lg={4} className={classes.gridItem}>
-                    <Card style={{ height: "auto" }}>
+                    <div className="cemetry_cards-1">
                       <CardContent align="center">
-                        <Typography variant="h5">
+                        <Typography variant="h5" className='wheat2'>
                           SCT-WAVAX LP:
                         </Typography>
-                        <CountUp style={{ fontSize: '25px' }} end={balance_sct_wftm} separator="," prefix="$" />
+                        <CountUp style={{ fontSize: '25px' }} end={balance_sct_wftm} separator="," prefix="$" className='wheat2' />
                       </CardContent>
                       <CardContent align="center">
-                        <Typography variant="h5">
+                        <Typography variant="h5" className='wheat2'>
                           PSHARES-WAVAX LP:
                         </Typography>
-                        <CountUp style={{ fontSize: '25px' }} end={balance_pshares_wftm} separator="," prefix="$" />
+                        <CountUp style={{ fontSize: '25px' }} end={balance_pshares_wftm} separator="," prefix="$" className='wheat2' />
                       </CardContent>
-                      <CardContent align="center">
+                      <CardContent align="center" className='wheat2'>
                         <Typography variant="h5">
                           USDT:
                         </Typography>
-                        <CountUp style={{ fontSize: '25px' }} end={balance_pshares_wftm} separator="," prefix="$" />
+                        <CountUp style={{ fontSize: '25px' }} end={balance_pshares_wftm} separator="," prefix="$" className='wheat2' />
                       </CardContent>
                       {/* <CardContent align="center">
                         <Typography variant="h5">
@@ -132,23 +138,23 @@ const Cemetery = () => {
                         </Typography>
                         <CountUp style={{ fontSize: '25px' }} end={balance_2shares_wftm} separator="," prefix="$" />
                       </CardContent> */}
-                    </Card>
+                    </div>
                   </Grid>
                   <Grid item xs={12} md={4} lg={4} className={classes.gridItem}>
-                    <Card style={{ height: "auto" }}>
-                      <CardContent align="center">
-                        <Typography variant="h5">
+                    <div style={{ height: "auto" }} className='cemetry_cards-1'>
+                      <CardContent align="center" className='wheat2'>
+                        <Typography variant="h5" > 
                           WAVAX:
                         </Typography>
                         <CountUp style={{ fontSize: '25px' }} end={balance_sct} separator="," prefix="$" />
                       </CardContent>
-                      <CardContent align="center">
+                      <CardContent align="center" className='wheat2'>
                         <Typography variant="h5">
                           USDC:
                         </Typography>
                         <CountUp style={{ fontSize: '25px' }} end={0} separator="," prefix="$" />
                       </CardContent>
-                      <CardContent align="center">
+                      <CardContent align="center" className='wheat2'>
                         <Typography variant="h5">
                           PSHARES:
                         </Typography>
@@ -160,7 +166,7 @@ const Cemetery = () => {
                         </Typography>
                         <CountUp style={{ fontSize: '25px' }} end={balance_2shares} separator="," prefix="$" />
                       </CardContent> */}
-                    </Card>
+                    </div>
                   </Grid>
                 </Grid>
               </Box>

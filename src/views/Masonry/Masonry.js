@@ -98,48 +98,48 @@ const Masonry = () => {
       <Box mt={5}>
         <Grid container justify="center" spacing={3}>
       <div className='mid-center'>
-          <Grid item xs={12} md={2} lg={2} className={classes.gridItem}>
+          {/* <Grid item xs={12} md={2} lg={2} className={classes.gridItem}> */}
               <div className='cemetry-small-3' >
-                <Typography style={{ textAlign: 'center' }}>Next Epoch</Typography>
+                <Typography style={{ textAlign: 'center',fontSize:'20px',paddingTop:'8px' }}>Next Epoch</Typography>
                 <ProgressCountdown base={moment().toDate()} hideBar={true} deadline={to} description="Next Epoch" />
               </div>
             
-          </Grid>
-          <Grid item xs={12} md={2} lg={2} className={classes.gridItem}>
+          {/* </Grid> */}
+          {/* <Grid item xs={12} md={2} lg={2} className={classes.gridItem}> */}
           
               <div className='cemetry-small-3'>
-                <Typography>Current Epoch</Typography>
+                <Typography style={{ textAlign: 'center',fontSize:'20px',paddingTop:'8px' }}>Current Epoch</Typography>
                 {/* <Typography>{Number(currentEpoch)}</Typography> */}
-                <Typography>{Number(0)}</Typography>
+                <Typography style={{ textAlign: 'center',fontSize:'20px' }}>{Number(0)}</Typography>
               </div>
          
-          </Grid>
-          <Grid item xs={12} md={2} lg={2} className={classes.gridItem}>
+          {/* </Grid> */}
+          {/* <Grid item xs={12} md={2} lg={2} className={classes.gridItem}> */}
             
               <div  className='cemetry-small-3'>
-                <Typography>
+                <Typography style={{ textAlign: 'center',fontSize:'20px',paddingTop:'8px' }}>
                   SCT Price<small> (TWAP)</small>
                 </Typography>
-                <Typography>{rebateStats.tombPrice.toFixed(4)} AVAX</Typography>
+                <Typography style={{ textAlign: 'center',fontSize:'20px' }}>{rebateStats.tombPrice.toFixed(4)} AVAX</Typography>
               </div>
             
-          </Grid>
-          <Grid item xs={12} md={2} lg={2} >
+          {/* </Grid> */}
+          {/* <Grid item xs={12} md={2} lg={2} > */}
            
               <div className='cemetry-small-3'>
-                <Typography>APR</Typography>
-                <Typography>{masonryAPR.toFixed(2)}%</Typography>
+                <Typography style={{ textAlign: 'center',fontSize:'20px',paddingTop:'8px' }}>APR</Typography>
+                <Typography style={{ textAlign: 'center',fontSize:'20px' }}>{masonryAPR.toFixed(2)}%</Typography>
               </div>
            
-          </Grid>
-          <Grid item xs={12} md={2} lg={2}>
+          {/* </Grid> */}
+          {/* <Grid item xs={12} md={2} lg={2}> */}
           
               <div className='cemetry-small-3'>
-                <Typography>PSHARES Staked</Typography>
-                <Typography>{getDisplayBalance(totalStaked)}</Typography>
+                <Typography style={{ textAlign: 'center',fontSize:'20px',paddingTop:'8px' }}>PSHARES Staked</Typography>
+                <Typography style={{ textAlign: 'center',fontSize:'20px' }}>{getDisplayBalance(totalStaked)}</Typography>
               </div>
            
-          </Grid>
+          {/* </Grid> */}
           </div>
         </Grid>
 
@@ -152,25 +152,28 @@ const Masonry = () => {
           </Box>
         </Grid> */}
 
-        <Box mt={4}>
-          <StyledBoardroom>
-            <StyledCardsWrapper>
-              <StyledCardWrapper>
+        <Box mt={8}>
+          {/* <StyledBoardroom> */}
+            {/* <StyledCardsWrapper> */}
+            <div className="wrapper">
+              {/* <StyledCardWrapper> */}
                 <Harvest />
-              </StyledCardWrapper>
-              <Spacer />
-              <StyledCardWrapper>
+              {/* </StyledCardWrapper> */}
+              {/* <Spacer /> */}
+              {/* <StyledCardWrapper> */}
                 <Stake />
-              </StyledCardWrapper>
-            </StyledCardsWrapper>
-          </StyledBoardroom>
+              {/* </StyledCardWrapper> */}
+              </div>
+            {/* </StyledCardsWrapper> */}
+          {/* </StyledBoardroom> */}
         </Box>
       </Box>
 
       <Box mt={5}>
         <Grid container justify="center" spacing={3} mt={10}>
           <Button 
-          className="btn btn-disabled"
+          style={{ textAlign: 'center',fontSize:'15px',paddingLeft:"20px",paddingRight:"20px" }}
+          className="btn pad2"
             disabled={stakedBalance.eq(0) || (!canWithdraw && !canClaimReward)}
             // disabled = { true }
             onClick={onRedeem}

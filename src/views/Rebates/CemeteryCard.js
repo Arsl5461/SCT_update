@@ -97,7 +97,7 @@ const CemeteryCard = ({ bank }) => {
               variant="contained"
               color="primary"
               onClick={approve}
-              className="btn-rebate"
+              className="btn"
               >
               Approve {bank.depositTokenName}
               </Button>
@@ -109,7 +109,7 @@ const CemeteryCard = ({ bank }) => {
 
         </CardActions>
       </div>
-    </Grid>
+     </Grid>
   );
 };
 

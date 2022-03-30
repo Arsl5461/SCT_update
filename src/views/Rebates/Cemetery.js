@@ -27,6 +27,8 @@ import Stats from "../../views/Home/Stats"
 // import Waves from "../../assets/img/sky.352b80b2.svg"
 // import { createGlobalStyle } from 'styled-components';
 import Cemetryy from "../../assets/img/cemetry.png"
+
+
 const web3 = new Web3()
 const BN = n => new web3.utils.BN(n)
 
@@ -142,7 +144,7 @@ const Cemetery = () => {
   <Page>
     <Route exact path={path}>
       <BackgroundImage />
-
+<Stats/>
       {!!account ? (
         <>
           {/* <Typography color="textPrimary" align="center" variant="h3" gutterBottom style={{ marginBottom: '40px' }}>
@@ -173,7 +175,7 @@ const Cemetery = () => {
             </Grid>
           </Box> */}
           <div hidden={activeBanks.filter((bank) => bank.sectionInUI === 0).length === 0}>
-              <Typography color="textPrimary" variant="h4" gutterBottom style={{ marginTop: '35px', marginBottom: '30px' }}>
+              <Typography color="textPrimary" variant="h4" gutterBottom style={{ marginTop: '35px', marginBottom: '30px',textAlign:'center', }}>
                 Bondable Assets
               </Typography>
               <Grid container spacing={3}>
@@ -187,22 +189,22 @@ const Cemetery = () => {
               </Grid>
           </div>
           <Box mt={2}>
-            <Grid container justify="center" spacing={3}>
-              <Grid item xs={12} md={3} lg={3} >
-              <div className="cemetry_cards-1 icon-mar5" >
+            {/* <Grid container justify="center" spacing={3}> */}
+              {/* <Grid item xs={12} md={3} lg={3} > */}
+              <div className="cemetry_cards-1">
                   <CardContent>
                     <Typography variant="h5" className="wheat2 center">
                       SCT Vesting
                     </Typography>
                     <Typography className="wheat2 center" variant="h6">{vested.toFixed(4)} Total Vested</Typography>
                     <Typography  className="wheat2 center"variant="h6">{claimablesct.toFixed(4)} Claimable</Typography>
-                    <Button color="primary" size="small" variant="contained" onClick={claimTomb} style={{ marginTop: "8px" }} className="btn-rebate icon-mar3">
-                      CLAIM
+                    <Button color="primary" size="small" variant="contained" onClick={claimTomb} style={{ marginTop: "8px" }} className="btn icon-mar3">
+                      CLAIM SCT
                     </Button>
                   </CardContent>
                 </div>
-              </Grid>
-            </Grid>
+              {/* </Grid> */}
+            {/* </Grid> */}
           </Box>
         </>
       ) : (
