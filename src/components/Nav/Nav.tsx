@@ -139,7 +139,7 @@ const Nav = () => {
               <NavLink style={{fontSize:"18px"}} color="textPrimary" to="/treasury" className={classes.link} activeClassName="active" >
                 Treasury
               </NavLink>
-              <NavLink style={{fontSize:"18px"}} color="textPrimary" to="/treasury" className={classes.link} activeClassName="active" >
+              <NavLink style={{fontSize:"18px"}} color="textPrimary" to="/docs" className={classes.link} activeClassName="active" >
                 Docs
               </NavLink>
 

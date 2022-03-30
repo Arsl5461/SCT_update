@@ -53,7 +53,7 @@ const CemeteryCard = ({ bank }) => {
 
   return (
     <Grid item xs={12} md={4} lg={4}>
-       <div className="cemetry_cards-1" >
+       <div className="cemetry_cards-1 mar-rebeates" >
         <CardContent style={{ marginTop:'0px'}}>
           <ProgressCountdown base={moment().toDate()} unix_deadline={bank.poolStartUnixtimestamp} description="Rebates starts in" />
           <Box style={{ position: 'relative' }}>

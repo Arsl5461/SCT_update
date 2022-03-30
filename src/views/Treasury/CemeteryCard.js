@@ -9,7 +9,7 @@ const CemeteryCard = ({ bank }) => {
   const prices = useTotalTreasuryBalance()
 
   return (
-    <Grid item xs={12} md={4} lg={4}>
+    
       <div className="cemetry_cards-1">
         <CardContent>
           <Box style={{ position: 'relative' }}>
@@ -26,12 +26,12 @@ const CemeteryCard = ({ bank }) => {
                 justifyContent: 'center',
               }}
             >
-              <TokenSymbol size={32} symbol={bank.depositTokenName} />
+              {/* <TokenSymbol size={32} symbol={bank.depositTokenName} /> */}
             </Box>
           </Box>
         </CardContent>
       </div>
-    </Grid>
+    
   );
 };
 

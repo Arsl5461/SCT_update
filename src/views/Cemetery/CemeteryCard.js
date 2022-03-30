@@ -11,8 +11,8 @@ import Fantom from "../../assets/img/fantom.7660b7c5.svg"
 const CemeteryCard = ({ bank }) => {
   const statsOnPool = useStatsForPool(bank);
   return (
-    // <Grid item xs={12} md={4} lg={4}>
-      <div className="cemetry_cards-1" >
+    // <Grid item xs={12} md={4} lg={5}>
+      <div className="cemetry_cards-1 mar-cemetry mar-cemetry2 " >
 
         <div>
           {/* <ProgressCountdown base={moment().toDate()} unix_deadline={bank.poolStartUnixtimestamp} description="Pool starts in" /> */}
@@ -73,7 +73,7 @@ const CemeteryCard = ({ bank }) => {
           {/* <button className="btn mar"  variant="contained" component={Link} to={`/cemetry/${bank.contract}`}>View</button> */}
         </CardActions>
       </div>
-    // </Grid>
+  //  </Grid>
   );
 };
 

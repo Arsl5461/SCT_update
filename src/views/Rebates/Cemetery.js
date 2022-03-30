@@ -191,7 +191,7 @@ const Cemetery = () => {
           <Box mt={2}>
             {/* <Grid container justify="center" spacing={3}> */}
               {/* <Grid item xs={12} md={3} lg={3} > */}
-              <div className="cemetry_cards-1">
+              <div className="cemetry_cards-1  mar-rebeates">
                   <CardContent>
                     <Typography variant="h5" className="wheat2 center">
                       SCT Vesting

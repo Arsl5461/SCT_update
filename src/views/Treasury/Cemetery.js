@@ -70,7 +70,7 @@ const Cemetery = () => {
           <BackgroundImage />
           <Stats/>
           {!!account ? (
-            <Container maxWidth="lg">
+        <>    
               <Typography color="textPrimary" variant="h4" gutterBottom style={{ marginTop: '35px', marginBottom: '30px',textAlign:'center', }}>
                 Treasury
               </Typography>
@@ -95,7 +95,7 @@ const Cemetery = () => {
               <Box mt={2}>
                 <Grid container justify="center" spacing={3}>
                   <Grid item xs={12} md={4} lg={4} className={classes.gridItem}>
-                    <div className='cemetry-small-4'>
+                    <div className='cemetry-small-5'>
                       <CardContent align="center">
                         <Typography variant="h5">
                           Total Treasury Balance:
@@ -112,8 +112,8 @@ const Cemetery = () => {
                 Protocol Owned Assets
               </Typography>
                 <Grid container justify="center" spacing={3}>
-                  <Grid item xs={12} md={4} lg={4} className={classes.gridItem}>
-                    <div className="cemetry_cards-1">
+                <Grid item xs={12} md={4} lg={4} className={classes.gridItem}>
+                <div style={{ height: "auto" }} className='cemetry_cards-1  mar-rebeates'>
                       <CardContent align="center">
                         <Typography variant="h5" className='wheat2'>
                           SCT-WAVAX LP:
@@ -139,9 +139,10 @@ const Cemetery = () => {
                         <CountUp style={{ fontSize: '25px' }} end={balance_2shares_wftm} separator="," prefix="$" />
                       </CardContent> */}
                     </div>
-                  </Grid>
+                    </Grid>
+                  
                   <Grid item xs={12} md={4} lg={4} className={classes.gridItem}>
-                    <div style={{ height: "auto" }} className='cemetry_cards-1'>
+                    <div style={{ height: "auto" }} className='cemetry_cards-1 mar-rebeates '>
                       <CardContent align="center" className='wheat2'>
                         <Typography variant="h5" > 
                           WAVAX:
@@ -169,6 +170,7 @@ const Cemetery = () => {
                     </div>
                   </Grid>
                 </Grid>
+                
               </Box>
 
               {/* <Grid container justify="center" spacing={3}>
@@ -184,7 +186,7 @@ const Cemetery = () => {
 
               
 
-            </Container>
+        </>
           ) : (
             <UnlockWallet />
           )}

@@ -86,10 +86,14 @@ const Pit: React.FC = () => {
         {!!account ? (
           <>
         
-          <div className='cemetry_title'>
-               <div className="heading wheat mar-right pit-center ">PIT</div>
+          {/* <div className='cemetry_title'>
+               <div className="heading wheat mar-right pit-center">PIT</div>
           <div className='bio wheat'>Buy and Redeem Bonds to Earn Premuims</div>
-          </div>
+          </div> */}
+          <Typography color="textPrimary" align="center" variant="h3" gutterBottom>
+        <strong style={{color:"wheat"}}>PIT</strong>
+         <div className='bio wheat font12'>Buy and Redeem Bonds to Earn Premuims</div>
+      </Typography>
           <div className="cemetry-small">
           
               <div className="cemetry-small-4">
