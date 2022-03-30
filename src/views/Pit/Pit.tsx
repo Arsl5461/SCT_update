@@ -142,8 +142,8 @@ const Pit: React.FC = () => {
           <div className='cemetry_heading'>Redeem TOMB</div>
           <div className="deposit">TBOND to TBOND</div>
           <div className="deposit card11">0.0000 TBOND Available in wallet</div>
-          <div className="deposit card11 hidden">0.0000 TBOND Available in wallet</div>
-          <div className="deposit card11 hidden">0.0000 TBOND Available in wallet</div>
+          <div className="deposit card11 hidden font8">0.0000 TBOND Available in wallet</div>
+          <div className="deposit card11 hidden font8">0.0000 TBOND Available in wallet</div>
 
           
           <StyledCardWrapper>

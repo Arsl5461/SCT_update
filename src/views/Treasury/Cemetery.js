@@ -94,16 +94,16 @@ const Cemetery = () => {
               
               <Box mt={2}>
                 <Grid container justify="center" spacing={3}>
-                  <Grid item xs={12} md={4} lg={4} className={classes.gridItem}>
+                  {/* <Grid item xs={12} md={4} lg={4} className={classes.gridItem}> */}
                     <div className='cemetry-small-5'>
                       <CardContent align="center">
-                        <Typography variant="h5">
+                        <Typography variant="h5" className="font12" >
                           Total Treasury Balance:
                         </Typography>
                         <CountUp style={{ fontSize: '25px' }} end={balance} separator="," prefix="$" />
                       </CardContent>
                     </div>
-                  </Grid>
+                  {/* </Grid> */}
                 </Grid>
               </Box>
 

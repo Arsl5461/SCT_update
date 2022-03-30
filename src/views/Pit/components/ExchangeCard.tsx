@@ -97,7 +97,7 @@ const ExchangeCard: React.FC<ExchangeCardProps> = ({
               </Button>
             ) : (
               <div className="marbottom">
-              <Button color="primary" variant="contained" onClick={onPresent} disabled={disabled}   className="marbottom">
+              <Button color="primary" variant="contained" onClick={onPresent} disabled={disabled}   className="marbottom font11 ">
                 {disabledDescription || action}
               </Button>
               </div>

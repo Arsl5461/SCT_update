@@ -39,7 +39,7 @@ const CemeteryCard = ({ bank }) => {
 <div className="rounded icons-harvest icon-mar3"><img src={Crypto11} width="50" height="50"/></div>
 <div className="rounded icons-harvest"><img src={Fantom} width="50" height="50"/></div> 
 </div>
-            <Typography className="wheat" variant="h5" component="h2">
+            <Typography className="wheat font10 center" variant="h5" component="h2">
               {bank.depositTokenName}
             </Typography>
 

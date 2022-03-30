@@ -55,7 +55,7 @@ const Bank: React.FC = () => {
         {/* <Grid container justify="center" spacing={3} style={{ marginBottom: '50px' }}> */}
           {/* <Grid item xs={12} md={2} lg={2} className={classes.gridItem}> */}
           <div className="bank">
-            <div className="cemetry-small-1 heading3">
+            <div className="cemetry-small-1">
               <div style={{ textAlign: 'center', boxShadow: 'none !important' }}>
                 <Typography className="pad">APR</Typography>
                 <Typography>{bank.closedForStaking ? '0.00' : statsOnPool?.yearlyAPR}%</Typography>
@@ -63,7 +63,7 @@ const Bank: React.FC = () => {
             </div>
           {/* </Grid> */}
           {/* <Grid item xs={12} md={2} lg={2} className={classes.gridItem}> */}
-            <div className="cemetry-small-1 heading3">
+            <div className="cemetry-small-1">
               <div style={{ textAlign: 'center' }}>
                 <Typography className="pad">Daily APR</Typography>
                 <Typography>{bank.closedForStaking ? '0.00' : statsOnPool?.dailyAPR}%</Typography>
@@ -71,7 +71,7 @@ const Bank: React.FC = () => {
             </div>
           {/* </Grid> */}
           {/* <Grid item xs={12} md={2} lg={2} className={classes.gridItem}> */}
-            <div className="cemetry-small-1 heading3">
+            <div className="cemetry-small-1 ">
               <div style={{ textAlign: 'center' }}>
                 <Typography className="pad">TVL</Typography>
                 <Typography>${statsOnPool?.TVL}</Typography>
